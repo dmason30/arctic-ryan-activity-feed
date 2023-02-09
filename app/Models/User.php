@@ -61,6 +61,6 @@ class User extends Authenticatable
 
     public function activities()
     {
-        return $this->hasMany(Activity::class)->orderByDesc('created_at')->with('attachments.attachable');
+        return $this->hasMany(Activity::class);
     }
 }

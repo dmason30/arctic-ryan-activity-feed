@@ -24,7 +24,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard', [
-            'activities' => auth()->user()->activities
+            'activities' => auth()->user()->activities()->orderByDesc('created_at')->with('attachments.attachable')->get()
         ]);
     })->name('dashboard');
 });
