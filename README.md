@@ -7,6 +7,6 @@
 5. Login with `test@example.com` & password is `password`
 6. See simple activity feed on dashboard
 
-See migrations for structure.
+See this [migration](https://github.com/dmason30/arctic-ryan-activity-feed/blob/main/database/migrations/2023_02_09_112937_create_activities_table.php) for structure.
 
 ![image](https://user-images.githubusercontent.com/20278756/217816726-500b0db7-4172-44ea-887c-d38b2c11adf2.png)
